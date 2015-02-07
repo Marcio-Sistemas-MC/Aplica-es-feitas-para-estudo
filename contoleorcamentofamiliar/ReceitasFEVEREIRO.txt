@@ -1,0 +1,8 @@
+salarioPrevisto 0.0
+salarioRecebido 1895.0
+extrasPrevisto 0.0
+extraRecebido 325.0
+outroPrevisto 0.0
+outroRecebido 0.0
+mesExercicio FEVEREIRO
+soma das Receitas 2220.0

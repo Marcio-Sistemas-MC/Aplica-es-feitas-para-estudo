@@ -1,0 +1,8 @@
+salarioPrevisto 0.0
+salarioRecebido 1256.0
+extrasPrevisto 0.0
+extraRecebido 12.0
+outroPrevisto 0.0
+outroRecebido 45.0
+mesExercicio JANEIRO
+soma das Receitas 1313.0
