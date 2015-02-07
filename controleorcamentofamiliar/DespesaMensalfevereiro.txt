@@ -1,58 +1,58 @@
 academiaPrevisto 0.0
 academiaEfetivado 0.0
 jornalPrevisto 0.0
-jornalEfetivado 0.0
+jornalEfetivado 13.0
 tvPrevisto 0.0
 tvEfetivado 0.0
 internetPrevisto 0.0
 internetEfetivado 75.0
 baresPrevisto 0.0
-baresEfetivado 125.0
+baresEfetivado 35.0
 cinemaPrevisto 0.0
 cinemaEfetivados 0.0
 outrosPrevisto 0.0
 outrosEfetivado 0.0
-Soma Lazer 200.0
+Soma Lazer 123.0
 supermercadoPrevisto 0.0
-supermercadoEfetivado 700.0
+supermercadoEfetivado 750.0
 feiraPrevisto 0.0
-feiraEfetivado 120.0
+feiraEfetivado 75.0
 outrosPrevisto 0.0
 outrosefetivado 0.0
-Soma Alimentacao 820.0
+Soma Alimentacao 825.0
 tarifasPrevisto 0.0
 tarifasEfetivados 12.0
 outrosPrevisto 0.0
-outrosEfetivado 1.75
-Soma Bancarios 13.75
+outrosEfetivado 35.0
+Soma Bancarios 47.0
 prestacaoPrevisto 0.0
-prestacaoEfetivado 450.0
+prestacaoEfetivado 652.0
 aluguelPrevisto 0.0
 aluguelefetivado 0.0
 condominioPrevisto 0.0
 condominioEfetivado 0.0
 aguaPrevisto 0.0
-aguaEfetivado 32.0
+aguaEfetivado 20.0
 luzPrevisto 0.0
-luzEfetivado 100.0
+luzEfetivado 123.0
 gasPrevisto 0.0
-gasEfetivado 55.0
+gasEfetivado 45.0
 impostoPrevisto 0.0
 impostoEfetivado 0.0
 telefonePrevisto 0.0
 telefoneEfetivado 31.0
 consertosPrevisto 0.0
-consertosEfetivados 35.0
+consertosEfetivados 0.0
 outrosPrevisto 0.0
 outrosEfetivado 0.0
-Soma Moradia 703.0
+Soma Moradia 871.0
 presentePrevisto 0.0
 presenteEfetivado 0.0
 doacaoPrevisto 0.0
-doacaoEfetivados 0.0
+doacaoEfetivados 15.0
 outrosPrevisto 0.0
-outrosEfetivado 35.0
-Soma Outros35.0
+outrosEfetivado 45.0
+Soma Outros60.0
 planoPrevisto 0.0
 planoEfetivado 0.0
 medicoPrevisto 0.0
@@ -63,11 +63,11 @@ outrosPrevisto 0.0
 outrosEfetivado 0.0
 Soma Saude110.0
 prestacaoPrevisto 0.0
-prestacaoEfetivado 0.0
+prestacaoEfetivado 351.0
 seguroPrevisto 0.0
 seguroEfetivado 0.0
 combustivelPrevisto 0.0
-combustivelEfetivado 0.0
+combustivelEfetivado 125.0
 estacionamentoPrevisto 0.0
 estacionamentoEfetivado 0.0
 impostoPrevisto 0.0
@@ -75,13 +75,13 @@ impostoEfetivado 0.0
 onibusPrevisto 0.0
 onibusEfetivado 0.0
 outrosPrevisto 0.0
-outrosEfetivado 0.0Soma Transporte 0.0
+outrosEfetivado 0.0Soma Transporte 476.0
 roupasPrevisto 0.0
-roupasEfetivado 0.0
+roupasEfetivado 75.0
 calcadoPrevisto 0.0
-calcadoEfetivado 65.0
+calcadoEfetivado 35.0
 outrosPrevisto 0.0
-outrosEfetivado 0.0Soma Vestuario 65.0
+outrosEfetivado 0.0Soma Vestuario 110.0
 mensalidadePrevisto 0.0
 mensalidadeEfetivado 0.0
 cursosPrevisto 0.0

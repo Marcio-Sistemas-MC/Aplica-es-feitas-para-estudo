@@ -213,7 +213,7 @@ public class EntradaDespesasController implements Initializable, ControlledScree
     @FXML
     private ToggleButton desabilita;
     private boolean desabilitado = false;
-    public static DespesasMensal despesaMensal;//gambiarra
+    public static DespesasMensal despesaMensal = new DespesasMensal();//gambiarra
     public static HashMap<String,DespesasMensal> mapaDespesas = new HashMap<>();
 
     @FXML
@@ -240,6 +240,7 @@ public class EntradaDespesasController implements Initializable, ControlledScree
             mapaDespesas.put(seletor.getPromptText(), despesaMensal);
             resetEntradas();
             JOptionPane.showMessageDialog(null, "DESPESAS INSERIDAS COM SUCESSO.");
+            this.handleButtonVoltarInicio(ev);
         } else {
             JOptionPane.showMessageDialog(null, "Selecione o mês de referência...");
         }
@@ -273,6 +274,7 @@ public class EntradaDespesasController implements Initializable, ControlledScree
                 seletor.setPromptText(newValue);
             }
         });
+        seletor.setEditable(true);
     }
 
     @Override

@@ -112,7 +112,8 @@ public class EntradaReceitasController implements Initializable, ControlledScree
     }
 
     private void configuraSeletorMes() {
-        seletorMes.getItems().addAll("SELECIONE O MÊS", "JANEIRO", "FEVEREIRO", "MARÇO", "ABRIL",
+        seletorMes.setPromptText("SELECIONE O MÊS");
+        seletorMes.getItems().addAll("JANEIRO", "FEVEREIRO", "MARÇO", "ABRIL",
                 "MAIO", "JUNHO", "JULHO", "AGOSTO", "SETEMBRO", "OUTUBRO", "NOVEMBRO", "DEZEMBRO");
         seletorMes.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
             @Override
@@ -120,6 +121,7 @@ public class EntradaReceitasController implements Initializable, ControlledScree
                 seletorMes.setPromptText(newValue);
             }
         });
+        seletorMes.setEditable(true);
     }
 
     /**

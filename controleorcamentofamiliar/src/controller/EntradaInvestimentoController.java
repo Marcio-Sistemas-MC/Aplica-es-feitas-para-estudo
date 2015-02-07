@@ -145,6 +145,7 @@ public class EntradaInvestimentoController implements Initializable, ControlledS
     }
 
     private void configuraSeletorMes() {
+        seletorMes.setPromptText("SELECIONE O MÊS");
         seletorMes.getItems().addAll("JANEIRO", "FEVEREIRO", "MARÇO", "ABRIL",
                 "MAIO", "JUNHO", "JULHO", "AGOSTO", "SETEMBRO", "OUTUBRO", "NOVEMBRO", "DEZEMBRO");
         seletorMes.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
@@ -153,6 +154,7 @@ public class EntradaInvestimentoController implements Initializable, ControlledS
                 seletorMes.setPromptText(newValue);
             }
         });
+        seletorMes.setEditable(true);
     }
 
     @Override

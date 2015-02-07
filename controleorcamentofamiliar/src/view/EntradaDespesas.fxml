@@ -7,12 +7,12 @@
 
 <AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EntradaDespesasController">
    <children>
-      <Label layoutX="143.0" layoutY="14.0" text="CONTOLE DE ENTRADAS DE DESPESAS">
+      <Label layoutX="143.0" text="CONTOLE DE ENTRADAS DE DESPESAS">
          <font>
             <Font name="Buxton Sketch" size="36.0" />
          </font></Label>
-       <Separator layoutX="-1.0" layoutY="64.0" prefHeight="16.0" prefWidth="800.0" />
-      <TabPane layoutY="113.0" prefHeight="344.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE">
+       <Separator layoutX="1.0" layoutY="47.0" prefHeight="16.0" prefWidth="800.0" />
+      <TabPane layoutY="88.0" prefHeight="369.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
           <Tab text="MORADIA">
             <content>
@@ -661,7 +661,7 @@
         </tabs>
       </TabPane>
       <Separator layoutY="459.0" prefHeight="0.0" prefWidth="800.0" />
-      <HBox alignment="CENTER_LEFT" layoutX="38.0" layoutY="74.0" prefHeight="38.0" prefWidth="725.0" spacing="15.0">
+      <HBox alignment="CENTER_LEFT" layoutX="38.0" layoutY="55.0" prefHeight="38.0" prefWidth="725.0" spacing="15.0">
          <children>
             <Label text="MÊS EXERCÍCIO:" textFill="#2563a1">
                <font>

@@ -74,10 +74,9 @@ public class TelaRelatorioController implements Initializable, ControlledScreen 
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
                 seletorMes.setPromptText(newValue);
-                carregaDados(newValue);
-                mesMsg.setText(newValue);
             }
         });
+        seletorMes.setEditable(true);
     }
 
     private void carregaDados(String mes) {

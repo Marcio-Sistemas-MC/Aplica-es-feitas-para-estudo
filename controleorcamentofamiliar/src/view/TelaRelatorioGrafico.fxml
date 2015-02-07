@@ -2,10 +2,28 @@
 
 <?import java.lang.*?>
 <?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TelaRelatorioGraficoController">
    <children>
-      <PieChart fx:id="grafico" layoutX="156.0" layoutY="100.0" prefHeight="371.0" prefWidth="489.0" title="Demonstração Resultados do mês" />
+      <PieChart fx:id="grafico" layoutX="157.0" layoutY="93.0" prefHeight="371.0" prefWidth="489.0" title="Demonstração Resultados do mês" />
+      <HBox alignment="CENTER_LEFT" layoutX="38.0" layoutY="55.0" prefHeight="38.0" prefWidth="725.0" spacing="15.0">
+         <children>
+            <Label text="MÊS EXERCÍCIO:" textFill="#2563a1">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="seletorMes" prefHeight="25.0" prefWidth="164.0" promptText="SELECIONE O MÊS" />
+         </children>
+      </HBox>
+      <Separator layoutX="1.0" layoutY="47.0" prefHeight="16.0" prefWidth="800.0" />
+      <Label layoutX="143.0" text="CONTOLE DE ENTRADAS DE DESPESAS">
+         <font>
+            <Font name="Buxton Sketch" size="36.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
