@@ -2,6 +2,7 @@
 
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
@@ -19,31 +20,72 @@
                   <Font name="Arial Black" size="36.0" />
                </font>
             </Label>
-            <HBox alignment="CENTER" layoutX="150.0" layoutY="35.0" prefHeight="124.0" prefWidth="500.0" spacing="15.0">
+            <HBox alignment="CENTER" layoutX="127.0" layoutY="62.0" prefHeight="95.0" prefWidth="545.0" spacing="15.0">
                <children>
-                  <Button mnemonicParsing="false" onAction="#handleBotaoReceitas" prefHeight="25.0" prefWidth="129.0" text="RECEITAS" textFill="#209a24">
+                  <Button mnemonicParsing="false" onAction="#handleBotaoReceitas" prefHeight="40.0" prefWidth="168.0" text="RECEITAS" textFill="#209a24">
                      <font>
                         <Font name="Arial Black" size="12.0" />
-                     </font></Button>
-                  <Button mnemonicParsing="false" onAction="#handleBotaoDespesas" prefHeight="25.0" prefWidth="129.0" text="DESPESAS" textFill="#da0d0d">
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="47.0" layoutX="97.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagens/dinheiro.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleBotaoDespesas" prefHeight="40.0" prefWidth="168.0" text="DESPESAS" textFill="#da0d0d">
                      <font>
                         <Font name="Arial Black" size="12.0" />
-                     </font></Button>
-                  <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleBoatoInvetimento" prefHeight="25.0" prefWidth="129.0" text="INVESTIMENTOS" textFill="#997420">
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagens/despesas.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleBoatoInvetimento" prefHeight="40.0" prefWidth="168.0" text="INVESTIMENTOS" textFill="#997420">
                      <font>
                         <Font name="Arial Black" size="12.0" />
-                     </font></Button>
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagens/investimentos.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
                </children>
             </HBox>
          </children>
       </Pane>
       <Pane layoutY="310.0" prefHeight="183.0" prefWidth="800.0">
          <children>
-            <HBox alignment="CENTER" layoutX="154.0" layoutY="46.0" prefHeight="124.0" prefWidth="492.0" spacing="15.0">
+            <HBox alignment="CENTER" layoutX="100.0" layoutY="46.0" prefHeight="124.0" prefWidth="492.0" spacing="15.0">
                <children>
-                  <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleBotaoRelatorioGastoMensal" prefHeight="25.0" prefWidth="119.0" text="GASTOS MENSAIS" />
-                  <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleBotaoRelatorioGrafico" prefHeight="25.0" prefWidth="119.0" text="ANÁLISE GRÁFICA" />
-                  <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="119.0" text="BALANÇO MENSAL" />
+                  <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleBotaoRelatorioGastoMensal" prefHeight="40.0" prefWidth="190.0" text="GASTOS MENSAIS" textFill="#1e60bc">
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="34.0" layoutX="179.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagens/rel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font></Button>
+                  <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleBotaoRelatorioGrafico" prefHeight="37.0" prefWidth="190.0" text="ANÁLISE GRÁFICA" textFill="#12626b">
+                     <graphic>
+                        <ImageView fitHeight="53.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagens/relatorio.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Arial Black" size="12.0" />
+                     </font></Button>
+                  <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="190.0" text="BALANÇO MENSAL" />
                </children>
             </HBox>
             <Label layoutX="270.0" layoutY="19.0" text="RELATÓRIOS">

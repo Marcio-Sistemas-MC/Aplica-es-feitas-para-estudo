@@ -93,6 +93,7 @@ public class EntradaReceitasController implements Initializable, ControlledScree
                 receitas.put(seletorMes.getPromptText(), receitaEntrada);
                 resetEntradas();
                 JOptionPane.showMessageDialog(null, "RECEITA INSERIDA COM SUCESSO.");
+                this.HandleButtonVoltarInicio(ev);
             }
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(null, "Entre como os dados no formato 0.00\n Com um ponto separando os centavos.");

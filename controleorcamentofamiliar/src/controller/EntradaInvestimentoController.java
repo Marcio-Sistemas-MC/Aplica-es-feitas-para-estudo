@@ -9,6 +9,7 @@ import controleorcamentofamiliar.Contoleorcamentofamiliar;
 import model.InvestimentoMensal;
 import util.ScreensController;
 import java.net.URL;
+import java.util.HashMap;
 import java.util.ResourceBundle;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -63,6 +64,7 @@ public class EntradaInvestimentoController implements Initializable, ControlledS
 
     private boolean desabilitado = false;
     private InvestimentoMensal investimento;
+    public HashMap<String,InvestimentoMensal> investimentos  = new HashMap<>();
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -109,9 +111,11 @@ public class EntradaInvestimentoController implements Initializable, ControlledS
                 JOptionPane.showMessageDialog(null, "Selecione o mês de referência...");
             } else {
                 investimento.setMesExercicio(seletorMes.getPromptText());
-                investimento.gravarDados();
+                //investimento.gravarDados();
+                investimentos.put(seletorMes.getPromptText(), investimento);
                 resetEntradas();
                 JOptionPane.showMessageDialog(null, "INVESTIMENTO INSERIDO COM SUCESSO.");
+                this.HandleButtonVoltarInicio(event);
             }
 
         } catch (Exception ex) {

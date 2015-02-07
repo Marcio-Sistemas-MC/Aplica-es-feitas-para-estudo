@@ -262,6 +262,7 @@ public class EntradaDespesasController implements Initializable, ControlledScree
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         configuraSeletorMes();
+        this.handleButtonDesativarPrevisao(new ActionEvent());
     }
 
     private void configuraSeletorMes() {
