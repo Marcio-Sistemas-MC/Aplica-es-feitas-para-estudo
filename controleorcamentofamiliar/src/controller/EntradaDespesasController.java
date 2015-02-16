@@ -31,46 +31,7 @@ public class EntradaDespesasController implements Initializable, ControlledScree
 
     ScreensController myController = new ScreensController();
     //BLOCO MORADIA
-    @FXML
-    private TextField aluguelPrevisto;
-    @FXML
-    private TextField aluguelEfetivado;
-    @FXML
-    private TextField condominoPrevisto;
-    @FXML
-    private TextField condominioEfetivado;
-    @FXML
-    private TextField presCasaPrevisto;
-    @FXML
-    private TextField presCasaEfetivado;
-    @FXML
-    private TextField luzPrevisto;
-    @FXML
-    private TextField luzEfetivado;
-    @FXML
-    private TextField aguaPrevisto;
-    @FXML
-    private TextField aguaEfetivado;
-    @FXML
-    private TextField gasPrevisto;
-    @FXML
-    private TextField gasEfetivado;
-    @FXML
-    private TextField impostoPrevisto;
-    @FXML
-    private TextField impostoEfetivado;
-    @FXML
-    private TextField telefonePrevisto;
-    @FXML
-    private TextField telefoneEfetivado;
-    @FXML
-    private TextField consManuPrevisto;
-    @FXML
-    private TextField consManuEfetivado;
-    @FXML
-    private TextField outroPrevisto;
-    @FXML
-    private TextField outroEfetivado;
+    
     //BLOCO ALIMENTAÇÃO
     @FXML
     private TextField superPrevisto;
@@ -225,7 +186,6 @@ public class EntradaDespesasController implements Initializable, ControlledScree
     private void handleButtonEntrarDados(ActionEvent ev) {
         despesaMensal = new DespesasMensal();
         this.entrarDadosMes();
-        this.entrarDadosMoradia();
         this.entrarDadosEducacao();
         this.entrarDadosAlimentacao();
         this.entrarDadosBancarios();
@@ -284,7 +244,6 @@ public class EntradaDespesasController implements Initializable, ControlledScree
     }
 
     private void desabilitarCamposPrevisao() {
-        this.deabilitaMoradia();
         this.desabilitaAlimentacao();
         this.desabilitaBancarios();
         this.desabilitaEducacao();
@@ -300,7 +259,6 @@ public class EntradaDespesasController implements Initializable, ControlledScree
         this.habilitaBancarios();
         this.habilitaEducacao();
         this.habilitaLazer();
-        this.habilitaMoradia();
         this.habilitaOutrosGastos();
         this.habilitaSaude();
         this.habilitaTransporte();
@@ -315,34 +273,7 @@ public class EntradaDespesasController implements Initializable, ControlledScree
         }
     }
 
-    private void entrarDadosMoradia() {
-        try {
-            despesaMensal.getDespesaMoradia().setAluguelefetivado(Double.parseDouble(this.aluguelEfetivado.getText()));
-            despesaMensal.getDespesaMoradia().setCondominioEfetivado(Double.parseDouble(this.condominioEfetivado.getText()));
-            despesaMensal.getDespesaMoradia().setPrestacaoEfetivado(Double.parseDouble(this.presCasaEfetivado.getText()));
-            despesaMensal.getDespesaMoradia().setLuzEfetivado(Double.parseDouble(this.luzEfetivado.getText()));
-            despesaMensal.getDespesaMoradia().setAguaEfetivado(Double.parseDouble(this.aguaEfetivado.getText()));
-            despesaMensal.getDespesaMoradia().setGasEfetivado(Double.parseDouble(this.gasEfetivado.getText()));
-            despesaMensal.getDespesaMoradia().setImpostoEfetivado(Double.parseDouble(this.impostoEfetivado.getText()));
-            despesaMensal.getDespesaMoradia().setTelefoneEfetivado(Double.parseDouble(this.telefoneEfetivado.getText()));
-            despesaMensal.getDespesaMoradia().setConsertosEfetivados(Double.parseDouble(this.consManuEfetivado.getText()));
-            despesaMensal.getDespesaMoradia().setOutrosEfetivado(Double.parseDouble(this.outroEfetivado.getText()));
-            if (!desabilitado) {
-                despesaMensal.getDespesaMoradia().setAguaPrevisto(Double.parseDouble(this.aluguelPrevisto.getText()));
-                despesaMensal.getDespesaMoradia().setCondominioPrevisto(Double.parseDouble(this.condominoPrevisto.getText()));
-                despesaMensal.getDespesaMoradia().setPrestacaoPrevisto(Double.parseDouble(this.presCasaPrevisto.getText()));
-                despesaMensal.getDespesaMoradia().setLuzPrevisto(Double.parseDouble(this.luzPrevisto.getText()));
-                despesaMensal.getDespesaMoradia().setAguaPrevisto(Double.parseDouble(this.aguaPrevisto.getText()));
-                despesaMensal.getDespesaMoradia().setGasPrevisto(Double.parseDouble(this.gasPrevisto.getText()));
-                despesaMensal.getDespesaMoradia().setImpostoPrevisto(Double.parseDouble(this.impostoPrevisto.getText()));
-                despesaMensal.getDespesaMoradia().setTelefonePrevisto(Double.parseDouble(this.telefonePrevisto.getText()));
-                despesaMensal.getDespesaMoradia().setConsertosPrevisto(Double.parseDouble(this.consManuPrevisto.getText()));
-                despesaMensal.getDespesaMoradia().setOutrosPrevisto(Double.parseDouble(this.outroPrevisto.getText()));
-            }
-        } catch (Exception ex) {
-            JOptionPane.showMessageDialog(null, "DESPESAS: MORADIA\nEntre com os dados no formato 0.00\ncom ponto separando os centavos....");
-        }
-    }
+    
 
     private void entrarDadosAlimentacao() {
         try {
@@ -480,31 +411,7 @@ public class EntradaDespesasController implements Initializable, ControlledScree
         }
     }
 
-    private void deabilitaMoradia() {
-        aluguelPrevisto.setDisable(true);
-        condominoPrevisto.setDisable(true);
-        presCasaPrevisto.setDisable(true);
-        luzPrevisto.setDisable(true);
-        aguaPrevisto.setDisable(true);
-        gasPrevisto.setDisable(true);
-        impostoPrevisto.setDisable(true);
-        telefonePrevisto.setDisable(true);
-        consManuPrevisto.setDisable(true);
-        outroPrevisto.setDisable(true);
-    }
-
-    private void habilitaMoradia() {
-        aluguelPrevisto.setDisable(false);
-        condominoPrevisto.setDisable(false);
-        presCasaPrevisto.setDisable(false);
-        luzPrevisto.setDisable(false);
-        aguaPrevisto.setDisable(false);
-        gasPrevisto.setDisable(false);
-        impostoPrevisto.setDisable(false);
-        telefonePrevisto.setDisable(false);
-        consManuPrevisto.setDisable(false);
-        outroPrevisto.setDisable(false);
-    }
+    
 
     private void desabilitaAlimentacao() {
         superPrevisto.setDisable(true);
@@ -647,18 +554,7 @@ public class EntradaDespesasController implements Initializable, ControlledScree
         outroBaEfetivado.setDisable(false);
     }
     
-    private void resetMoradia() {
-        aluguelPrevisto.clear();
-        condominoPrevisto.clear();
-        presCasaPrevisto.clear();
-        luzPrevisto.clear();
-        aguaPrevisto.clear();
-        gasPrevisto.clear();
-        impostoPrevisto.clear();
-        telefonePrevisto.clear();
-        consManuPrevisto.clear();
-        outroPrevisto.clear();
-    }
+    
     
     private void resetAlimentacao() {
         superPrevisto.clear();
@@ -753,7 +649,6 @@ public class EntradaDespesasController implements Initializable, ControlledScree
          this.resetBancarios();
          this.resetEducacao();
          this.resetLazer();
-         this.resetMoradia();
          this.resetOutrosGastos();
          this.resetSaude();
          this.resetTransporte();

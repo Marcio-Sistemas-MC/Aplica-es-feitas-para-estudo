@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="meutransporteapp.TelaPontosController">
+   <children>
+      <VBox layoutX="33.0" layoutY="184.0" prefHeight="185.0" prefWidth="71.0" spacing="15.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleBotaoLinha" prefHeight="25.0" prefWidth="72.0" text="010" />
+            <Button mnemonicParsing="false" onAction="#handleBotaoLinha" prefHeight="25.0" prefWidth="75.0" text="020" />
+            <Button mnemonicParsing="false" onAction="#handleBotaoLinha" prefHeight="25.0" prefWidth="73.0" text="030" />
+            <Button mnemonicParsing="false" onAction="#handleBotaoLinha" prefHeight="25.0" prefWidth="74.0" text="040" />
+            <Button mnemonicParsing="false" onAction="#handleBotaoLinha" prefHeight="25.0" prefWidth="79.0" text="050" />
+            <Button mnemonicParsing="false" onAction="#handleBotaoLinha" prefHeight="25.0" prefWidth="72.0" text="Todos" />
+         </children>
+      </VBox>
+      <TableView fx:id="tabelaPontos" layoutX="159.0" layoutY="118.0" prefHeight="357.0" prefWidth="561.0">
+        <columns>
+          <TableColumn fx:id="linha" prefWidth="67.0" text="Nº Ponto" />
+          <TableColumn fx:id="local" prefWidth="182.0" text="Localização" />
+            <TableColumn fx:id="hora1" prefWidth="100.0" text="Horário 1" />
+            <TableColumn fx:id="hora2" prefWidth="100.0" text="Horário 2" />
+            <TableColumn fx:id="rota" prefWidth="107.0" text="Rota" />
+        </columns>
+      </TableView>
+      <Separator layoutX="3.0" layoutY="68.0" prefHeight="7.0" prefWidth="800.0" />
+      <HBox layoutX="386.0" layoutY="88.0" spacing="3.0" />
+      <Label layoutX="337.0" layoutY="75.0" text="Pontos da Linha:">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="numRota" layoutX="505.0" layoutY="75.0">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="255.0" text="MEU TRANSPORTE">
+         <font>
+            <Font name="Buxton Sketch" size="48.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -31,6 +31,9 @@ public class Contoleorcamentofamiliar extends Application {
     public static String telaRelatorioFxml = "/view/TelaRelatorio.fxml";
     public static String telaRelatorioGrafico = "TelaRelatorioGrafico";
     public static String telaRelatorioGraficoFxml = "/view/TelaRelatorioGrafico.fxml";
+    public static String telaDespesaMoradia = "TelaDespesaMoradia";
+    public static String telaDespesaMoradiaFxml = "/view/TelaDespesaMoradia.fxml";
+    
     @Override
     public void start(Stage stage) throws Exception {
         ScreensController myContainer = new ScreensController();
@@ -40,7 +43,8 @@ public class Contoleorcamentofamiliar extends Application {
         myContainer.loadScreen(telaInvestimentos, telaInvestimentosFxml);
         myContainer.loadScreen(telaRelatorio, telaRelatorioFxml);
         myContainer.loadScreen(telaRelatorioGrafico, telaRelatorioGraficoFxml);
-        myContainer.setScreen(telaPrincipal);
+        myContainer.loadScreen(telaDespesaMoradia, telaDespesaMoradiaFxml);
+        myContainer.setScreen(telaDespesaMoradia);
         
         /*Parent root = FXMLLoader.load(getClass().getResource("EntradaReceitas.fxml"));*/
         Group root = new Group();

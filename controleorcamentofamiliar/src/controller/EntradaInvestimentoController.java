@@ -69,6 +69,7 @@ public class EntradaInvestimentoController implements Initializable, ControlledS
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         configuraSeletorMes();
+        this.handleButtonDesativarPrevisao(new ActionEvent());
     }
 
     @FXML
