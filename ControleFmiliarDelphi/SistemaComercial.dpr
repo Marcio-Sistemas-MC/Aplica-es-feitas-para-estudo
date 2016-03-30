@@ -1,4 +1,4 @@
-program ControleFamiliar;
+program SistemaComercial;
 
 uses
   Forms,
