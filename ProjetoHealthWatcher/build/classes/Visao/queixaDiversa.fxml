@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minWidth="-Infinity" prefHeight="533.0" prefWidth="689.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Visao.CadastrarQueixaDiversa">
+   <children>
+      <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Text layoutX="106.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registrar Queixa Diversa" textAlignment="CENTER" wrappingWidth="478.443359375">
+         <font>
+            <Font name="Arial Italic" size="36.0" />
+         </font>
+      </Text>
+      <TabPane layoutX="2.0" layoutY="75.0" prefHeight="371.0" prefWidth="687.0">
+         <tabs>
+            <Tab closable="false" text="Dados do Reclamante">
+               <content>
+                  <AnchorPane prefHeight="334.0" prefWidth="676.0">
+                     <children>
+                        <GridPane alignment="CENTER" hgap="10.0" layoutX="3.0" layoutY="7.0" prefHeight="320.0" prefWidth="681.0" vgap="10.0">
+                           <columnConstraints>
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="26.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="26.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:" wrappingWidth="56.892578125">
+                                 <font>
+                                    <Font name="Arial Bold Italic" size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Rua/Número:" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Arial Bold Italic" size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Complemento:" wrappingWidth="133.93408203125" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Arial Bold Italic" size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bairro:" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Arial Bold Italic" size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cidade:" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Arial Bold Italic" size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Estado:" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="Arial Bold Italic" size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CEP:" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font name="Arial Bold Italic" size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone:" GridPane.rowIndex="7">
+                                 <font>
+                                    <Font name="Arial Bold Italic" size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail:" GridPane.rowIndex="8">
+                                 <font>
+                                    <Font name="Arial Bold Italic" size="17.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="tfNome" GridPane.columnIndex="1" />
+                              <HBox alignment="CENTER" prefHeight="26.0" prefWidth="428.0" spacing="20.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <children>
+                                    <TextField fx:id="tfRua" prefHeight="25.0" prefWidth="372.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <TextField fx:id="tfNum" prefHeight="25.0" prefWidth="92.0" />
+                                 </children>
+                              </HBox>
+                              <TextField fx:id="tfComp" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField fx:id="tfBairro" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <TextField fx:id="tfCidade" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <ComboBox fx:id="cbEstado" prefHeight="25.0" prefWidth="157.0" promptText="Selecione Um Estado" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <TextField fx:id="tfCEP" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                              <TextField fx:id="tfTelefone" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                              <TextField fx:id="tfEmail" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab closable="false" text="Dados da Ocorrência">
+               <content>
+                  <AnchorPane prefHeight="340.0" prefWidth="687.0">
+                     <children>
+                        <GridPane hgap="10.0" layoutX="78.0" layoutY="41.0" prefHeight="283.0" prefWidth="541.0" vgap="20.0">
+                           <columnConstraints>
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Text layoutX="16.0" layoutY="123.6103515625" strokeType="OUTSIDE" strokeWidth="0.0" text="Situação:" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Arial Bold Italic" size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutY="72.6103515625" strokeType="OUTSIDE" strokeWidth="0.0" text="Observação:" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Arial Bold Italic" size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="11.0" layoutY="19.6103515625" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrição:">
+                                 <font>
+                                    <Font name="Arial Bold Italic" size="17.0" />
+                                 </font>
+                              </Text>
+                              <TextArea fx:id="taDescricao" prefHeight="115.0" prefWidth="428.0" promptText="DESCREVA A QUI A QUEIXA" wrapText="true" GridPane.columnIndex="1" />
+                              <TextArea fx:id="taObservacao" prefHeight="117.0" prefWidth="428.0" promptText="ESCREVA ALGUMA OBSERVAÇÃO SOBRE A QUEIXA" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="tfSituacao" editable="false" promptText="Situação da Quixa" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+      <HBox layoutX="197.0" layoutY="465.0" spacing="100.0">
+         <children>
+            <Button fx:id="btnSalvar" layoutX="126.0" layoutY="472.0" mnemonicParsing="false" onAction="#handleBtnSalvar" prefHeight="44.0" prefWidth="96.0" text="Salvar" textAlignment="CENTER" textFill="#4d22da">
+               <font>
+                  <Font name="AngsanaUPC Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnLimpar" layoutX="549.0" layoutY="479.0" mnemonicParsing="false" onAction="#handleBtnLimpar" prefHeight="44.0" prefWidth="96.0" text="Limpar" textAlignment="CENTER" textFill="#d5d923">
+               <font>
+                  <Font name="AngsanaUPC Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Separator layoutX="2.0" layoutY="448.0" prefHeight="17.0" prefWidth="687.0" />
+   </children>
+</AnchorPane>

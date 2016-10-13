@@ -6,7 +6,7 @@ uses
   SysUtils, Classes, DBXpress, DB, SqlExpr;
 
 type
-  TDataModule1 = class(TDataModule)
+  TdmPrincipal = class(TDataModule)
     sqlConsSisComercial: TSQLConnection;
   private
     { Private declarations }
@@ -15,7 +15,7 @@ type
   end;
 
 var
-  DataModule1: TDataModule1;
+  dmPrincipal: TdmPrincipal;
 
 implementation
 

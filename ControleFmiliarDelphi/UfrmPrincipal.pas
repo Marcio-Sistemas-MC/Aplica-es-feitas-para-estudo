@@ -27,6 +27,7 @@ type
     stbDataHora: TStatusBar;
     Timer1: TTimer;
     procedure Timer1Timer(Sender: TObject);
+    procedure Cliente1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -38,6 +39,8 @@ var
   frmPrincipal: TfrmPrincipal;
 
 implementation
+
+uses UfrmCadCliente;
 
 {$R *.dfm}
 
@@ -66,6 +69,17 @@ begin
   stbDataHora.Panels[0].Text := DatetoStr(date);//transforma uma data em string
   stbDataHora.Panels[1].Text := TimetoStr(time);//transforma a hora em string
   stbDataHora.Panels[2].Text := DataStatus;
+end;
+
+procedure TfrmPrincipal.Cliente1Click(Sender: TObject);
+begin
+  try
+    frmCadCliente := TfrmCadCliente.Create(self);
+    frmCadCliente.ShowModal;
+  finally
+    frmCadCliente.Free;
+    frmCadCliente := nil;
+  end;
 end;
 
 end.

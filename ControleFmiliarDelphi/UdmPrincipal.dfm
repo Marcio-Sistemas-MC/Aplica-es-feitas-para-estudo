@@ -14,7 +14,7 @@ object dmPrincipal: TdmPrincipal
       'DriverName=Interbase'
       
         'Database=C:\Users\marcio e polliny\Documents\GitHub\repositorio\' +
-        'ControleFmiliarDelphi\Dados\DADOS.FDB'
+        'ControleFmiliarDelphi\DADOS.FDB'
       'RoleName=RoleName'
       'User_Name=sysdba'
       'Password=masterkey'

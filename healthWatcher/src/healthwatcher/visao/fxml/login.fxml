@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="436.0" prefWidth="507.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthwatcher.controller.LoginController">
+    <children>
+      <TextField fx:id="txtLogin" layoutX="65.0" layoutY="146.0" prefHeight="42.0" prefWidth="394.0" promptText="Login" />
+      <PasswordField fx:id="txtSenha" layoutX="65.0" layoutY="228.0" onAction="#b_loginActionPerformed" prefHeight="42.0" prefWidth="394.0" promptText="Senha" text="Senha" />
+      <Button fx:id="btnLogar" layoutX="65.0" layoutY="318.0" mnemonicParsing="false" onAction="#b_loginActionPerformed" prefHeight="61.0" prefWidth="154.0" text="LOGAR" textAlignment="CENTER" textFill="#4d22da">
+         <font>
+            <Font name="AngsanaUPC Bold" size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnLimpar" layoutX="305.0" layoutY="318.0" mnemonicParsing="false" onAction="#b_limparActionPerformed" prefHeight="61.0" prefWidth="154.0" text="LIMPAR" textAlignment="CENTER" textFill="#d92327">
+         <font>
+            <Font name="AngsanaUPC Bold" size="30.0" />
+         </font>
+      </Button>
+      <Pane fx:id="painelInicial" layoutX="26.0" layoutY="44.0" prefHeight="368.0" prefWidth="456.0" style="-fx-background-color: #896523;">
+         <children>
+            <ImageView fx:id="imgCidadao" fitHeight="150.0" fitWidth="200.0" layoutX="20.0" layoutY="109.0" nodeOrientation="INHERIT" onMouseClicked="#hanldeImgCidado" onMouseEntered="#imgFocus" onMouseExited="#imgFocusExit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../imagens/cidadao.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgFuncionario" fitHeight="150.0" fitWidth="200.0" layoutX="242.0" layoutY="109.0" onMouseClicked="#handleImgFuncionario" onMouseEntered="#imgFocus" onMouseExited="#imgFocusExit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../imagens/funcionario.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="38.0" layoutY="304.0" text="CIDADÃO" textFill="#eef5ec">
+               <font>
+                  <Font name="Baskerville Old Face" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="261.0" layoutY="304.0" text="FUNCIONÁRIO" textFill="#f2eded">
+               <font>
+                  <Font name="Baskerville Old Face" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="46.0" layoutY="58.0" text="HEALTH -WATCHER">
+         <font>
+            <Font name="Baskerville Old Face" size="42.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="painel" cacheHint="SCALE_AND_ROTATE" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #4bbbea;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthwatcher.controller.principalController">
+   <children>
+      <MenuBar fx:id="barraMenu" prefHeight="25.0" prefWidth="1200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Cadastros">
+            <items>
+                  <Menu mnemonicParsing="false" text="Queixas">
+                    <items>
+                    <MenuItem fx:id="mnQxaAlimentar" mnemonicParsing="false" onAction="#handleMnQxaAlimentar" text="Queixa Alimentar" />
+                      <MenuItem fx:id="mnQxaAnimal" mnemonicParsing="false" onAction="#handleMnQxaAnimal" text="Queixa Animal" />
+                        <MenuItem fx:id="mnQxaDiversa" mnemonicParsing="false" onAction="#handleQxaDiversa" text="Queixa Diversa" />
+                    </items>
+                  </Menu>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Consultas">
+            <items>
+                  <Menu mnemonicParsing="false" text="Guia de Saúde">
+                    <items>
+                      <MenuItem fx:id="mnUnidadeSaude" mnemonicParsing="false" onAction="#handleMnUnidadeSaude" text="Unidades de Saúde" />
+                    <MenuItem fx:id="mnEspecialidades" mnemonicParsing="false" onAction="#hanldeMnEspecialidades" text="Especialidades" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Informações Diversas">
+                    <items>
+                        <Menu mnemonicParsing="false" text="Queixas">
+                          <items>
+                            <MenuItem fx:id="mnConsQueixaAlimentar" mnemonicParsing="false" onAction="#handleMnConsQueixaAlimentar" text="Queixa alimentar" />
+                              <MenuItem fx:id="mnConsQueixaAnimal" mnemonicParsing="false" onAction="#hanldeMnConsQueixaAnimal" text="Queixa Animal" />
+                              <MenuItem fx:id="mnConsQueixaDiversa" mnemonicParsing="false" onAction="#handleMnConsQueixaDiversa" text="Queixa Diversa" />
+                          </items>
+                        </Menu>
+                        <MenuItem fx:id="mnConsDoencas" mnemonicParsing="false" onAction="#handleMnConsDoencas" text="Doenças" />
+                    </items>
+                  </Menu>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Sobre">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ToolBar layoutY="25.0" prefHeight="80.0" prefWidth="1200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <items>
+            <Button fx:id="btCadastroQueixas" alignment="BASELINE_CENTER" contentDisplay="CENTER" layoutY="31.0" mnemonicParsing="false" onAction="#handleBtnCadastrarQueixas" prefHeight="70.0" prefWidth="110.0" text="QUEIXAS" />
+            <Button fx:id="btnConsultas" alignment="BASELINE_CENTER" layoutX="130.0" layoutY="31.0" mnemonicParsing="false" onAction="#handleBtnConsultas" prefHeight="70.0" prefWidth="110.0" />
+            <Button fx:id="btnLogin" alignment="BASELINE_CENTER" contentDisplay="TOP" layoutX="260.0" layoutY="31.0" mnemonicParsing="false" onAction="#handleBtnLogin" prefHeight="77.0" prefWidth="110.0" text="  LOGOUT">
+               <graphic>
+                  <ImageView fitHeight="59.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../imagens/login.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Baskerville Old Face" size="12.0" />
+               </font></Button>
+            <Button fx:id="btnSair" alignment="CENTER" contentDisplay="TOP" layoutX="390.0" layoutY="31.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#handleBtnSair" prefHeight="70.0" prefWidth="110.0" text="SAIR" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <graphic>
+                  <ImageView fitHeight="53.0" fitWidth="62.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../imagens/sair.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Baskerville Old Face" size="12.0" />
+               </font></Button>
+            <Button layoutX="520.0" layoutY="31.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="110.0" text="Button" visible="false" />
+            <Button layoutX="650.0" layoutY="31.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="110.0" text="Button" visible="false" />
+         </items>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </ToolBar>
+      <ImageView fx:id="imgFundo" fitHeight="800.0" fitWidth="1200.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="113.0">
+         <image>
+            <Image url="@../../../imagens/saude.jpg" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport></ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="70.0" layoutX="934.0" layoutY="120.0" stroke="BLACK" strokeType="INSIDE" width="252.0" />
+      <Label layoutX="1010.0" layoutY="130.0" prefHeight="25.0" prefWidth="101.0" text="Logado como:" textFill="BLUE">
+         <font>
+            <Font name="Baskerville Old Face" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="usuarioLogado" layoutX="1010.0" layoutY="155.0" prefHeight="25.0" prefWidth="101.0" text="Usuário" textFill="BLUE">
+         <font>
+            <Font name="Baskerville Old Face" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

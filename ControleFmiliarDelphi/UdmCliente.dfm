@@ -1,15 +1,75 @@
 object dmCliente: TdmCliente
   OldCreateOrder = False
-  Left = 535
-  Top = 231
+  Left = 619
+  Top = 519
   Height = 150
   Width = 215
   object sdsCadCliente: TSQLDataSet
+    CommandText = 'select  *  from CLIENTE'
     MaxBlobSize = -1
     ParamCheck = False
     Params = <>
     SQLConnection = dmPrincipal.sqlConsSisComercial
-    Left = 16
+    Left = 88
     Top = 8
+  end
+  object dspCadCliente: TDataSetProvider
+    DataSet = sdsCadCliente
+    Left = 80
+    Top = 64
+  end
+  object cdsCadCliente: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'dspCadCliente'
+    Left = 152
+    Top = 8
+    object cdsCadClienteCLICODIGO: TIntegerField
+      FieldName = 'CLICODIGO'
+      Required = True
+    end
+    object cdsCadClienteCLINOME: TStringField
+      FieldName = 'CLINOME'
+      Size = 50
+    end
+    object cdsCadClienteCLIENDERECO: TStringField
+      FieldName = 'CLIENDERECO'
+      Size = 50
+    end
+    object cdsCadClienteCLIBAIRRO: TStringField
+      FieldName = 'CLIBAIRRO'
+      Size = 30
+    end
+    object cdsCadClienteCLIUF: TStringField
+      FieldName = 'CLIUF'
+      FixedChar = True
+      Size = 2
+    end
+    object cdsCadClienteCLITEL1: TStringField
+      FieldName = 'CLITEL1'
+      Size = 13
+    end
+    object cdsCadClienteCLIETEL2: TStringField
+      FieldName = 'CLIETEL2'
+      Size = 13
+    end
+    object cdsCadClienteCLICELULAR: TStringField
+      FieldName = 'CLICELULAR'
+      Size = 13
+    end
+    object cdsCadClienteCLICEP: TStringField
+      FieldName = 'CLICEP'
+      Size = 9
+    end
+    object cdsCadClienteDTCADASTRO: TSQLTimeStampField
+      FieldName = 'DTCADASTRO'
+    end
+    object cdsCadClienteDTATUALIZACAO: TSQLTimeStampField
+      FieldName = 'DTATUALIZACAO'
+    end
+    object cdsCadClienteCLICIDADE: TStringField
+      FieldName = 'CLICIDADE'
+      Size = 30
+    end
   end
 end

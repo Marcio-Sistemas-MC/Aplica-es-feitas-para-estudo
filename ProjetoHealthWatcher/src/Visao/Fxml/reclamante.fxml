@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+
+<AnchorPane id="AnchorPane" prefHeight="533.0" prefWidth="689.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controle.ReclamanteController">
+    <GridPane alignment="CENTER" hgap="10.0" layoutX="3.0" layoutY="7.0" prefHeight="320.0" prefWidth="681.0" vgap="10.0">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="26.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="26.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:" wrappingWidth="56.892578125">
+                <font>
+                    <Font name="Arial Bold Italic" size="17.0" />
+                </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Rua/Número:" GridPane.rowIndex="1">
+                <font>
+                    <Font name="Arial Bold Italic" size="17.0" />
+                </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Complemento:" wrappingWidth="133.93408203125" GridPane.rowIndex="2">
+                <font>
+                    <Font name="Arial Bold Italic" size="17.0" />
+                </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bairro:" GridPane.rowIndex="3">
+                <font>
+                    <Font name="Arial Bold Italic" size="17.0" />
+                </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cidade:" GridPane.rowIndex="4">
+                <font>
+                    <Font name="Arial Bold Italic" size="17.0" />
+                </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Estado:" GridPane.rowIndex="5">
+                <font>
+                    <Font name="Arial Bold Italic" size="17.0" />
+                </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CEP:" GridPane.rowIndex="6">
+                <font>
+                    <Font name="Arial Bold Italic" size="17.0" />
+                </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone:" GridPane.rowIndex="7">
+                <font>
+                    <Font name="Arial Bold Italic" size="17.0" />
+                </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail:" GridPane.rowIndex="8">
+                <font>
+                    <Font name="Arial Bold Italic" size="17.0" />
+                </font>
+            </Text>
+            <TextField fx:id="tfNome" GridPane.columnIndex="1" />
+            <HBox alignment="CENTER" prefHeight="26.0" prefWidth="428.0" spacing="20.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                <children>
+                    <TextField fx:id="tfRua" prefHeight="25.0" prefWidth="372.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                    <TextField fx:id="tfNum" prefHeight="25.0" prefWidth="92.0" />
+                </children>
+            </HBox>
+            <TextField fx:id="tfComp" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="tfBairro" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="tfCidade" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ComboBox fx:id="cbEstado" prefHeight="25.0" prefWidth="157.0" promptText="Selecione Um Estado" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="tfCEP" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="tfTelefone" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="tfEmail" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+        </children>
+    </GridPane>
+</AnchorPane>
