@@ -1,0 +1,28 @@
+unit UdmCliente;
+
+interface
+
+uses
+  SysUtils, Classes, FMTBcd, DB, SqlExpr, Provider, DBClient;
+
+type
+  TdmCliente = class(TDataModule)
+    sdsCadCliente: TSQLDataSet;
+    dspCadCliente: TDataSetProvider;
+    cdsCadCliente: TClientDataSet;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  dmCliente: TdmCliente;
+
+implementation
+
+uses UdmPrincipal;
+
+{$R *.dfm}
+
+end.

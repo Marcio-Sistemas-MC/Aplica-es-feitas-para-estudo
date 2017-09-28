@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="483.0" prefWidth="677.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthwatcher.controller.ConsultaqueixaalimentarController">
+   <children>
+      <Label layoutX="278.0" layoutY="22.0" text="QUEIXAS AIMENTARES" />
+      <TableView fx:id="tabela" layoutX="38.0" layoutY="76.0" prefHeight="331.0" prefWidth="603.0">
+        <columns>
+          <TableColumn fx:id="queixa" prefWidth="75.0" text="ID QUEIXA" />
+          <TableColumn fx:id="qxalimentar" prefWidth="98.0" text="ID ALIMENTAR" />
+            <TableColumn fx:id="reclamante" prefWidth="113.0" text="ID RECLAMANTE" />
+            <TableColumn fx:id="descQueixa" prefWidth="220.0" text="QUEIXA" />
+            <TableColumn fx:id="situacao" prefWidth="96.0" text="SITUAÇÃO" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnSair" layoutX="38.0" layoutY="432.0" mnemonicParsing="false" onAction="#handleBtnSair" prefHeight="25.0" prefWidth="59.0" text="SAIR" />
+   </children>
+</AnchorPane>

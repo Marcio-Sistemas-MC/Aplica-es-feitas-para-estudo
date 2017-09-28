@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="370.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.FXMLDocumentController">
+    <children>
+      <GridPane alignment="CENTER" hgap="10.0" layoutX="35.0" layoutY="145.0" prefHeight="141.0" prefWidth="370.0" vgap="10.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.0" minWidth="10.0" prefWidth="85.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="275.0" minWidth="10.0" prefWidth="275.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="USUÁRIO" />
+            <Label text="SENHA" GridPane.rowIndex="1" />
+            <TextField fx:id="txfUsuario" promptText="digite o usuário cadastrado" GridPane.columnIndex="1" />
+            <PasswordField fx:id="psfSenha" onAction="#handerBtnConfirmar" promptText="digite a senha do usuário para entrar" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <HBox layoutX="86.0" layoutY="299.0" spacing="100.0">
+         <children>
+              <Button fx:id="btnConfirmar" layoutX="111.0" layoutY="295.0" onAction="#handerBtnConfirmar" text="CONFIRMAR" />
+            <Button fx:id="BtnCancelar" layoutX="227.0" layoutY="295.0" onAction="#handleBtnCancelar" prefHeight="25.0" prefWidth="84.0" text="CANCELAR" />
+         </children>
+      </HBox>
+      <ImageView fitHeight="131.0" fitWidth="370.0" layoutX="89.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagens/dinheiro.png" />
+         </image></ImageView>
+    </children>
+</AnchorPane>

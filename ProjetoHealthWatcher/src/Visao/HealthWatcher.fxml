@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="433.0" prefWidth="512.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controle.HealthWatcherController">
+    <children>
+      <VBox layoutX="179.0" layoutY="159.0" spacing="50.0">
+         <children>
+            <RadioButton fx:id="rbtnAlimentar" layoutX="186.0" layoutY="182.0" mnemonicParsing="false" text="Queixa alimentar">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rbtnAnimal" layoutX="188.0" layoutY="256.0" mnemonicParsing="false" text="Queixa animal">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rbtnDiversa" layoutX="186.0" layoutY="327.0" mnemonicParsing="false" text="Queixa diversa">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </VBox>
+      <Label layoutX="48.0" layoutY="41.0" text="Qual a Sua Queixa?">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnVoltar" layoutX="48.0" layoutY="379.0" mnemonicParsing="false" onAction="#handleBtnVoltar" prefHeight="25.0" prefWidth="85.0" text="VOLTAR" />
+      <Button fx:id="btnProsseguir" layoutX="389.0" layoutY="379.0" mnemonicParsing="false" onAction="#handleBtnProsseguir" text="PROSSEGUIR" />
+   </children>
+   <effect>
+      <Reflection />
+   </effect>
+</AnchorPane>

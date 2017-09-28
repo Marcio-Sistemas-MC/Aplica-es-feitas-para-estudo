@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="493.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthwatcher.controller.QueixaController">
+    <children>
+        <GridPane hgap="10.0" layoutX="51.0" layoutY="102.0" prefHeight="313.0" prefWidth="577.0" vgap="20.0">
+            <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="155.0" minWidth="10.0" prefWidth="137.0" />
+                <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="431.0" minWidth="10.0" prefWidth="430.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="160.0" minHeight="10.0" prefHeight="112.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="107.0" minHeight="10.0" prefHeight="107.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Text layoutX="16.0" layoutY="123.6103515625" strokeType="OUTSIDE" strokeWidth="0.0" text="Situação:" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="Arial Bold Italic" size="17.0" />
+                    </font>
+                </Text>
+                <Text layoutY="72.6103515625" strokeType="OUTSIDE" strokeWidth="0.0" text="Observação:" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Arial Bold Italic" size="17.0" />
+                    </font>
+                </Text>
+                <Text layoutX="11.0" layoutY="19.6103515625" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrição:">
+                    <font>
+                        <Font name="Arial Bold Italic" size="17.0" />
+                    </font>
+                </Text>
+                <TextArea fx:id="taDescricao" prefHeight="115.0" prefWidth="428.0" promptText="DESCREVA A QUI A QUEIXA" wrapText="true" GridPane.columnIndex="1" />
+                <TextArea fx:id="taObservacao" prefHeight="117.0" prefWidth="428.0" promptText="ESCREVA ALGUMA OBSERVAÇÃO SOBRE A QUEIXA" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <TextField fx:id="tfSituacao" editable="false" promptText="Situação da Quixa" text="ABERTA" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ComboBox fx:id="cbTipoQueixa" prefHeight="25.0" prefWidth="201.0" promptText="SELECIONE UM TIPO" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de Queixa:" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Bold Italic" size="17.0" />
+               </font>
+            </Text>
+            </children>
+        </GridPane>
+      <Button fx:id="bnContinuar" layoutX="538.0" layoutY="438.0" mnemonicParsing="false" onAction="#handleBtnContinuar" text="CONTINUAR">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnCancelar" layoutX="51.0" layoutY="442.0" mnemonicParsing="false" onAction="#handleBtnCancelar" prefHeight="29.0" prefWidth="96.0" text="CANCELAR">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="92.0" layoutY="30.0" text="CADASTRO DE QUEIXAS">
+         <font>
+            <Font name="Arial Black" size="35.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
